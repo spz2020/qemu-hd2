@@ -31,7 +31,7 @@ LLVM="$NDK/toolchains/llvm/prebuilt/linux-x86_64"
 # TLS: below it the compiler emulates thread-locals with a function call per
 # access, and QEMU reads current_cpu and friends often enough for that to be
 # several percent of a phone's emulation time.
-API=34
+API=32
 JOBS="$(nproc 2>/dev/null || echo 4)"
 
 # QEMU 11 has no 32-bit host backend left - tcg/ ships aarch64, x86_64,
